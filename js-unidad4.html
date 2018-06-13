@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+ 	<!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/js.ico">
+	<title>Multimedia</title>
+	<!-- libraries -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./libs/syntax/shThemeFadeToGrey.css">
+	<link rel="stylesheet" type="text/css" href="./libs/fontawesome/css/fontawesome-all.css">
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <span class="navbar-brand mb-0 h1">
+            <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Multimedia
+        </span>
+        
+    </nav>
+
+	<!-- Content -->
+	<div class="container mt-4 mb-4">
+		<a href="index.html"> <i class="fas fa-arrow-circle-left fa-3x"></i> </a>
+		<br>
+		<br>
+		<h2>Funciones</h2>
+		<br>
+		<p class="text-justify">
+			Una función JavaScript es un bloque de código diseñado para realizar una tarea en particular. Una función se ejecuta cuando "algo "la invoca (la llama).
+		</p>
+		<br>
+		<h4>Sintaxis</h4>
+		<br>
+		<p class="text-justify">
+			Una función de JavaScript se define con la palabra clave <strong>function</strong>, seguida de un <strong>nombre</strong>, seguido de paréntesis <strong>()</strong>.
+			<br>
+			Los nombres de funciones pueden contener letras, números, guiones bajos y signos de dólar (las mismas reglas que las variables).
+			<br>
+			Los paréntisis pueden incluir nombres de parámetros separados por comas: <strong>(parámetro1, parámetro2, ...)</strong>.
+			<br>
+			El codigo que se ejecutará, por la función, se coloca entre llaves: <strong>{}</strong>
+		</p>
+		<br>
+		<pre class="brush:js">
+			function nombre(parametro1, parametro2)
+			{
+				// Codigo a ejecutar
+			}
+		</pre>
+		<br>
+		<h4>Función de retorno</h4>
+		<br>
+		<p class="text-justify">
+			Cuando JavaScript alcanza una declaración de retorno (<strong>return</strong>), la función dejara de ejecutarse.
+			<br>
+			Las funciones a menudo calculan un <strong>valor de retorno</strong>. El valor de retorno es "devuelto" a quien "la llama". 
+			<br>
+			<strong>Ejemplo: </strong>
+			<br>
+			Calcule el producto de dos números y devuelva el resultado:
+		</p>
+		<br>
+		<pre class="brush:js">
+			var a = multiplicar(5, 5);
+
+			function multiplicar(x, y){
+				return x * y;
+			}
+		</pre>
+		<br>
+		<p class="text-justify">
+			El resutado almacenado en <strong>a</strong> será: <strong>25</strong>.
+		</p>
+		<br>
+		<h4>¿Por qué funciones?</h4>
+		<br>
+		<p class="text-justify">
+			Puede reutilizar el código, se define la función una vez y se puede usar las veces que se requiera en cualquier parte del codigo.
+			<br>
+			<br>
+			El operador <strong>()</strong> invoca la función. Llamar a la funcion sin <strong>()</strong> devolverá la definición de la función en lugar del resultado, es decir, devolvera el código.
+			<br>
+			<br>
+			Reutilizando el código anterior llamaremos a la función <strong>multiplicar</strong> sin los <strong>()</strong>:
+		</p>
+		<br>
+		<pre class="brush:js">
+			var a = multiplicar;
+
+			function multiplicar(x, y){
+				return x * y;
+			}
+		</pre>
+		<br>
+		<p class="text-justify">
+			El resultado almacenado en <strong>a</strong> será el siguiente:
+		</p>
+		<pre class="brush:js">
+			function multiplicar(x, y){
+				return x * y;
+			}
+		</pre>
+
+	</div>
+
+	<!-- libraries -->
+	<!-- Jquery -->
+	<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- syntax -->
+	<script type="text/javascript" src="./libs/syntax/shCore.js"></script>
+	<script type="text/javascript" src="./libs/syntax/shAutoloader.js"></script>
+	<script type="text/javascript" src="./libs/syntax/shBrushJScript.js"></script>
+	<script type="text/javascript" src="./libs/syntax/shBrushPhp.js"></script>
+
+
+	<!-- App Scripts -->
+	<script type="text/javascript" src="./js/index.js"></script>
+
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</body>
+</html>

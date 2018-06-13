@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+ 	<!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/js.ico">
+	<title>Multimedia</title>
+	<!-- libraries -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./libs/syntax/shThemeFadeToGrey.css">
+	<link rel="stylesheet" type="text/css" href="./libs/fontawesome/css/fontawesome-all.css">
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <span class="navbar-brand mb-0 h1">
+            <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Multimedia
+        </span>
+        
+    </nav>
+
+	<!-- Content -->
+	<div class="container mt-4 mb-4">
+		<a href="index.html"> <i class="fas fa-arrow-circle-left fa-3x"></i> </a>
+		
+		<br>
+		<br>
+		<!-- Tabs -->
+
+		<!-- Tabs Nav -->
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+
+		  <li class="nav-item">
+		    <a class="nav-link active" id="intro-tab" data-toggle="tab" href="#intro" role="tab" aria-controls="intro" aria-selected="true">Introducción</a>
+		  </li>
+
+		  <li class="nav-item">
+		    <a class="nav-link" id="sintax-tab" data-toggle="tab" href="#sintax" role="tab" aria-controls="sintax" aria-selected="false">Sintaxis y Comentarios</a>
+		  </li>
+
+		   <li class="nav-item">
+		    <a class="nav-link" id="output-tab" data-toggle="tab" href="#output" role="tab" aria-controls="output" aria-selected="false">Salida de datos</a>
+		  </li>
+
+		</ul>
+
+		<!-- Tabs Content -->
+		<div class="tab-content" id="myTabContent">
+			<!-- Contenido de introducción -->
+		  <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+		  	<p class="text-justify">
+		  		<strong>JavaScript (JS)</strong> es un lenguaje de programación interpretado.<br>
+		  		<br>
+		  		Se utiliza principalmente en su forma del lado del cliente (client-side), implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas, aunque existe una forma de JavaScript del lado del servidor, como NodeJs. Su uso en aplicaciones externas a la web, por ejemplo en aplicaciones de escritorio y moviles es también significativo.<br>
+		  		<br>
+		  		Desde el 2012, todos los navegadores modernos soportan completamente la version <strong>ECMAScript 5.1</strong>, la sexta edición (<strong>ECMAScript 6</strong>) se liberó en julio del 2015.
+		  	</p><br>
+		  	<br>
+		  	<h4>¿Donde colocarlo?</h4>
+		  	<p class="text-justify">
+		  		En HTML, el código JavaScript debe insertarse entre las etiquetas &lt;script&gt; y &lt;/script&gt;
+		  	</p>
+		  	<br>
+		  	<pre class="brush: php">
+		  		<script>
+		  			var x, y;
+		  			x = 10; y = 5;
+		  			prueba = x + y;
+		  		</script>
+		  	</pre><br>
+		  	<br>
+		  	<h4>Javascript en &lt;head&gt; o &lt;body&gt;</h4>
+		  	<p class="text-justify">
+
+		  		Puede colocar cualquier cantidad de secuencias de comandos en un documento HTML. <br>
+		  		Los scripts se pueden colocar en la sección &lt;body&gt;, o en la &lt; head&gt; de una página HTML, o en ambos. <br>
+
+		  		También puede ser codigo embebido dentro de las etiquetas &lt;script&gt; y &lt;/ script&gt; (como en el ejemplo anterior) o referenciar un codigo externo.
+		  	</p><br>
+
+		  	<h4>JavaScript en &lt;head&gt;</h4>
+		  	<br>
+
+		  	<pre class="brush:php">
+		  		&lt;!DOCTYPE html&gt;
+		  		&lt;html&gt;
+		  		&lt;head&gt;
+		  		&lt;!--  Javascript embebido --&gt;
+		  		&lt;script&gt;
+			  		var x, y;
+		  			x = 10; y = 5;
+		  			prueba = x + y;
+		  		&lt;/script&gt;
+
+		  		&lt;!-- Javascript externo --&gt;
+		  		&lt;script type="text/javascript" src="ejemplo.js"&gt;&lt;/script&gt;
+		  		&lt;/head&gt;
+
+		  		&lt;body&gt;
+
+		  			&lt;div&gt;
+		  				Contenido
+		  			&lt;/div&gt;
+
+
+		  		&lt;/body&gt;
+		  		&lt;/html&gt;
+		  	</pre>
+		  	<br>
+
+		  	<h4>JavaScript en &lt;body&gt;</h4>
+		  	<br>
+		  	<pre class="brush:php;">
+		  		&lt;!DOCTYPE html&gt;
+		  		&lt;html&gt;
+		  		&lt;head&gt;
+		  		
+		  		&lt;/head&gt;
+
+		  		&lt;body&gt;
+		  			&lt;div&gt;
+		  				Contenido
+		  			&lt;/div&gt;
+		  			
+		  		&lt;!--  Javascript embebido --&gt;
+		  		&lt;script&gt;
+			  		var x, y;
+		  			x = 10; y = 5;
+		  			prueba = x + y;
+		  		&lt;/script&gt;
+
+		  		&lt;!-- Javascript externo --&gt;
+		  		&lt;script type="text/javascript" src="ejemplo.js"&gt;&lt;/script&gt;
+		  		&lt;/body&gt;
+		  		&lt;/html&gt;
+		  	</pre>
+
+
+
+		  </div>
+		<!-- Contenido de sintaxis y comentarios -->
+		  <div class="tab-pane fade" id="sintax" role="tabpanel" aria-labelledby="sintax-tab">
+		  	<h4>Sintaxis</h4>
+		  	<p class="text-justify">
+		  		La sintaxis se refiere a el conjunto de reglas que se siguen para escribir codigo en <strong>JavaScript</strong>.<br>
+		  		<br>
+		  	</p>
+		  	<pre class="brush:js">
+		  		var x, y; // Declarar Variables
+		  		x = 10; y = 5; // Asignando valores
+		  		prueba = x + y; // Hacer una operación
+		  	</pre>
+		  	<br>
+
+		  	<h4>Valores</h4>
+		  	<p class="text-justify">
+		  		La sintaxis de <strong>JavaScript</strong> define dos tipos de valores: literales y variables.
+		  	</p>
+
+		  	<h5>Literales</h5><br>
+
+		  	<p class="text-justify">
+		  		<strong>Los números</strong> se escriben con o sin decimales:
+		  	</p>
+		  	<pre class="brush:js">
+		  		10.50
+
+		  		10
+		  	</pre>
+		  	<br>
+		  	<p class="text-justify">
+		  		<strong>Las cadenas de texto </strong>se escriben entre comillas simples o dobles:
+		  	</p>
+		  	<pre class="brush:js">
+		  		"Maria"
+
+		  		'Maria'
+		  	</pre>
+		  	<br>
+		  	<p class="text-justify">
+		  		Para concatenar o unir cadenas de texto se utiliza el signo + como se ve a continuación: 
+		  	</p>
+		  	<pre class="brush:js">
+		  		// Unimos y agregamos un espacio de por medio
+		  		"Maria" + " " + "Rodriguez"
+		  		// También es posible agregar un espacio dentro de la misma cadena y luego unirlas
+		  		"Maria " + "Rodriguez"
+		  	</pre>
+		  	<br>
+		  	<h4>Identificadores</h4>
+		  	<p class="text-justify">
+		  		Los identificadores son nombres que se utilizan para identificar variables, palabras clave, funciones y etiquetas. <br>
+		  		<br>
+		  		En JavaScript, el primer carácter debe ser una letra, un guión bajo (_) o un signo de dólar ($). Los caracteres subsiguientes pueden ser letras, dígitos, guiones bajos o signos de dólar. <br>
+		  		<br>
+		  		Los números no están permitidos como el primer carácter, de esta forma, JavaScript puede distinguir fácilmente los identificadores de los números. <br>
+		  		<br>
+		  		Todos los identificadores de JavaScript distinguen mayúsculas de minúsculas. JavaScript no reconoce <strong>VAR</strong> o <strong>Var</strong>, solo reconoce la palabra clave <strong>var</strong><br>
+		  		<br>
+		  		Las variables Nombre y nombre, son dos variables distintas: 
+		  	</p>
+
+		  	<pre class="brush:js">
+		  		var Nombre, nombre;
+		  		Nombre = 'Jose';
+		  		nombre = 'Miguel';
+		  	</pre>
+		  	<br>
+
+		  	<h4>Camel Case</h4>
+		  	<p class="text-justify">
+		  		Los programadores utilizan diferentes formas de unir múltiples palabras en un nombre de variable:
+
+		  		<strong>Guiones (-): </strong>Los guiones no estan permitidos en JavaScript. Se utilizan para realizar restas. <br>
+		  		<br>
+		  		<strong>Guion bajo (_):</strong> primer_nombre, segundo_nombre. <br>
+		  		<br>
+		  		<strong>Camel superior: </strong> PrimerNombre, SegundoNombre. <br>
+		  		<br>
+		  		<strong>Camel Inferior: </strong> es el standar en el caso de los programadores de JavaScript, comienza con una letra minúscula y las demás palabras comienzan por mayúscula. Ejemplo: <strong>primerNombre, segundoNombre.</strong>
+		  	</p><br>
+		  	<br>
+		  	<h4>Comentarios</h4>
+		  	<p class="text-justify">
+		  		Los comentarios se utilizan generalmente para explicar el código escrito y hacerlo más entendible. <br>
+		  		<br>
+		  		Los comentarios también se utilizan para evitar la ejecución de algún fragmento de código. Por ejemplo cuando probamos algún código, podemos comentar las partes que no queremos que se ejecuten.
+		  	</p> <br>
+		  	<br>
+		  	<h4>Comentarios de línea</h4>
+		  	<p class="text-justify">
+		  		Los comentarios de línea comienzan con //. Cualquier texto que este despues de // hasta el final de la línea sera ignorado, no se ejecutará. <br>
+		  		<br>
+		  	</p>
+		  	<pre class="brush:js">
+		  		// Reciclamos el codigo anterior
+
+		  		// Definimos las variables
+		  		var Nombre, nombre;
+		  		// Le Asignamos los Valores
+		  		Nombre = 'Jose'; // valor Jose
+		  		nombre = 'Miguel'; // valor Miguel
+		  	</pre>
+
+		  	<br>
+		  	<h4>Comentarios de varias líneas</h4>
+		  	<p class="text-justify">
+		  		Los comentarios de línea comienzan con /* y terminan con */. Cualquier texto que este despues de /* y */ sera ignorado. <br>
+		  		<br>
+		  	</p>
+		  	<pre class="brush:js">
+		  		/* 
+		  		Reciclamos el codigo anterior
+
+		  		Definimos las variables 
+		  		*/
+		  		var Nombre, nombre;
+		  		/* Le Asignamos los Valores */
+		  		Nombre = 'Jose';
+		  		nombre = 'Miguel';
+		  	</pre>
+
+		  </div>
+		  <!-- Contenido para la salida de datos -->
+		  <div class="tab-pane fade" id="output" role="tabpanel" aria-labelledby="output-tab">
+		  	<br>
+		  	<p class="text-justify">
+		  		JavaScript puede mostrar datos de diferentes maneras: <br>
+		  		<li>Escribir en un elemento HTML, usando <strong>innerHTML</strong>.</li>
+		  		<li>Escribir en el HTML, usando <strong>document.write()</strong>.</li>
+		  		<li>Escribir en un cuadro de alerta, usando <strong>window.alert()</strong>.</li>
+		  		<li>Escribir en la consola del navegador, usando <strong>console.log()</strong>.</li>
+		  	</p>
+		  	<br>
+
+		  	<h4>Usando innerHTML</h4>
+		  	<p class="text-justify">
+		  		Para acceder a un elemento HTML, JavaScript puede usar el método <strong>document.getElementById(id)</strong>. <br>
+
+		  		El atributo <strong>id</strong> define el elemento HTML. La propiedad innerHTML escribe el contenido dentro el elemento HTML seleccionado:
+
+		  	</p>
+		  	<br>
+		  	<pre class="brush:php">
+		  		&lt;!DOCTYPE html&gt;
+		  		&lt;html&gt;
+		  		&lt;body&gt;
+
+		  		&lt;h1&gt;My First Web Page&lt;/h1&gt;
+		  		&lt;p&gt;My First Paragraph&lt;/p&gt;
+
+		  		&lt;p id="demo"&gt;&lt;/p&gt;
+
+		  		&lt;script&gt;
+		  		document.getElementById("demo").innerHTML = 5 + 6;
+		  		&lt;/script&gt;
+
+		  		&lt;/body&gt;
+		  		&lt;/html&gt;
+		  	</pre>
+		 	<br>
+		 	<h4>Usando document.write()</h4>
+		 	<p class="text-justify">
+		 		Para propósitos de prueba, es conveniente usar <strong>document.write ()</strong>:
+		 	</p>
+		 	<br>
+		 	<pre class="brush:php">
+		  		&lt;!DOCTYPE html&gt;
+		  		&lt;html&gt;
+		  		&lt;body&gt;
+
+		  		&lt;h1&gt;Suma&lt;/h1&gt;
+		  		&lt;p&gt;5 + 6 =&lt;/p&gt;
+
+		  		&lt;script&gt;
+		  		document.write(5 + 6);
+		  		&lt;/script&gt;
+
+		  		&lt;/body&gt;
+		  		&lt;/html&gt;
+		  	</pre>
+		  	<br>
+		  	<p class="text-justify">
+		  		Al usar <strong>document.write ()</strong> después de que un documento HTML esté completamente cargado, se eliminará todo el HTML existente :
+		  	</p>
+		  	<br>
+		  	<pre class="brush:php">
+		  		&lt;!DOCTYPE html&gt;
+		  		&lt;html&gt;
+		  		&lt;body&gt;
+
+		  		&lt;h1&gt;Suma&lt;/h1&gt;
+		  		&lt;p&gt;5 + 6 =&lt;/p&gt;
+
+		  		&lt;button type="button" onclick="document.write(5 + 6)"&gt;Sumar&lt;/button&gt;
+
+		  		&lt;/body&gt;
+		  		&lt;/html&gt;
+		  	</pre>
+		  	<br>
+		  	<h4>Usando window.alert()</h4>
+		 	<p class="text-justify">
+		 		Puede usar un cuadro de alerta para mostrar datos:
+		 	</p>
+		 	<br>
+		 	<pre class="brush:php">
+		  		&lt;!DOCTYPE html&gt;
+		  		&lt;html&gt;
+		  		&lt;body&gt;
+
+		  		
+		  		&lt;script&gt;
+		  		window.alert(5 + 6);
+		  		&lt;/script&gt;
+
+		  		&lt;/body&gt;
+		  		&lt;/html&gt;
+		  	</pre>
+		  	<br>
+		  	<h4>Usando console.log()</h4>
+		 	<p class="text-justify">
+		 		Para fines de depuración, puede usar el método console.log () para mostrar datos. <br>
+		 		Estos datos apareceran en la consola de depuración del navegador. Puedes acceder a ella en la opción <strong>Herramienta para desarrolladores</strong>.
+		 	</p>
+		 	<br>
+		 	<pre class="brush:php">
+		  		&lt;!DOCTYPE html&gt;
+		  		&lt;html&gt;
+		  		&lt;body&gt;
+
+		  		
+		  		&lt;script&gt;
+		  		console.log(5 + 6);
+		  		&lt;/script&gt;
+
+		  		&lt;/body&gt;
+		  		&lt;/html&gt;
+		  	</pre>
+		  	<br>
+		  </div>
+		</div>
+	</div>
+
+	<!-- libraries -->
+	<!-- Jquery -->
+	<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- syntax -->
+	<script type="text/javascript" src="./libs/syntax/shCore.js"></script>
+	<script type="text/javascript" src="./libs/syntax/shAutoloader.js"></script>
+	<script type="text/javascript" src="./libs/syntax/shBrushJScript.js"></script>
+	<script type="text/javascript" src="./libs/syntax/shBrushPhp.js"></script>
+
+
+	<!-- App Scripts -->
+	<script type="text/javascript" src="./js/index.js"></script>
+
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</body>
+</html>

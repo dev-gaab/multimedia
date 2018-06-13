@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+ 	<!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/js.ico">
+	<title>Multimedia</title>
+	<!-- libraries -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./libs/fontawesome/css/fontawesome-all.css">
+	<link href='./css/simple-sidebar.css' rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<span class="navbar-item pr-2" style="border-right: 1px solid white;">
+			<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
+		</span>
+		
+        <span class="navbar-brand mb-0 h1 ml-2">
+            <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Multimedia
+        </span>
+        
+    </nav>
+
+	<div id="wrapper">
+
+	    <!-- Sidebar -->
+	    <div id="sidebar-wrapper">
+	        <ul class="sidebar-nav">
+	            <li class="sidebar-brand">
+	                <a href="#">
+	                    Start Bootstrap
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">Dashboard</a>
+	            </li>
+	            <li>
+	                <a href="#">Shortcuts</a>
+	            </li>
+	            <li>
+	                <a href="#">Overview</a>
+	            </li>
+	            <li>
+	                <a href="#">Events</a>
+	            </li>
+	            <li>
+	                <a href="#">About</a>
+	            </li>
+	            <li>
+	                <a href="#">Services</a>
+	            </li>
+	            <li>
+	                <a href="#">Contact</a>
+	            </li>
+	        </ul>
+	    </div>
+	    <!-- /#sidebar-wrapper -->
+
+	    <!-- Page Content -->
+	    <div id="page-content-wrapper">
+	        <div class="container-fluid">
+	            
+	          <h1>Simple Sidebar</h1>
+	            	<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+	            	<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+	        </div>
+	    </div>
+	    <!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- libraries -->
+	<!-- Jquery -->
+	<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+	  <script>
+	    $("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#wrapper").toggleClass("toggled");
+	    });
+    </script>
+
+</body>
+</html>
