@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/js.ico">
+  <title>Multimedia</title>
+  <!-- libraries -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../../libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../libs/fontawesome/css/fontawesome-all.css">
+  <link rel="stylesheet" type="text/css" href="../../libs/syntax/shThemeFadeToGrey.css">
+  <link href='../../css/simple-sidebar.css' rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-item pr-2" style="border-right: 1px solid white;">
+      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
+    </span>
+
+        <span class="navbar-brand mb-0 h1 ml-2">
+            <img src="../../img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Multimedia
+        </span>
+
+    </nav>
+
+  <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li>
+                  <a href="#">Inicio</a>
+              </li>
+              <li>
+                  <a href="intro.html">Introducción</a>
+              </li>
+              <li>
+                  <a href="sintax.html">Sintaxis y Comentarios</a>
+              </li>
+              <li>
+                  <a href="salida.html">Salida de datos</a>
+              </li>
+              <li>
+                  <a href="variables.html">Variables y tipos de datos</a>
+              </li>
+              <li>
+                  <a href="opArit.html">Operadores aritméticos</a>
+              </li>
+              <li>
+                  <a href="opAsig.html">Operadores de asignación</a>
+              </li>
+              <li>
+                  <a href="opComp.html">Operadores de comparación</a>
+              </li>
+              <li>
+                  <a href="opLog.html">Operadores lógicos</a>
+              </li>
+              <li>
+                  <a href="funciones.html">Funciones</a>
+              </li>
+              <li>
+                  <a href="condicionales.html">Condicionales</a>
+              </li>
+              <li>
+                  <a href="ciclos.html">Ciclos</a>
+              </li>
+          </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+          <div id="content" class="container-fluid">
+            Cuando se escribe un código, a menudo se desea realizar diferentes acciones dependiendo de las distintas decisiones. Para eso se utilizan los condicionales.
+            <br>
+            <br>
+            En JavaScript tenemos las siguientes declaraciones condicionales:
+            <ul>
+              <li><strong>if</strong>: para especificar si un código sera ejecutado, si la condición se cumple.</li>
+              <li><strong>else</strong>: para especificar que un bloque de codigo se ejecutara, si la condicion en <strong>if</strong> no se cumple.</li>
+              <li><strong>else if</strong>: si la primera condición falla, puede probar con otra condición.</li>
+              <li><strong>switch</strong>: define muchas condiciones alternativas a ser ejecutados dependiendo de cual condición se cumpla.</li>
+            </ul>
+            <br>
+            <h4>Condicional if</h4>
+            <p class="text-justify">
+              <strong>Ejemplo</strong>
+              <br>
+              Considerando que <strong>x = 10</strong>.Imprima la variable <strong>x</strong> en una alerta si es mayor que <strong>7</strong>:
+            </p>
+            <br>
+            <pre class="brush:js">
+              if (x > 7){
+              // se ejecuta el siguiento codigo ya que el resultado es verdadero
+                alert(x);
+              }
+            </pre>
+            <br>
+            <h4>Condicional else</h4>
+            <p class="text-justify">
+              <strong>Ejemplo</strong>
+              <br>
+              Tomando el ejemplo anterior, pero ahora considerando que <strong>x = 5</strong>, imprima la variable <strong>x</strong> en una alerta si es mayor que <strong>7</strong> y sino muestre un mensaje:
+            </p>
+            <br>
+            <pre class="brush:js">
+              if (x > 7){
+              //este codigo no se ejecuta ya que el resultado es falso
+                alert(x);
+              } else {
+              // se ejecuta el siguiente codigo
+                alert("La variable x es menor que 7");
+              }
+            </pre>
+            <br>
+            <h4>Condicional else if</h4>
+            <p class="text-justify">
+              <strong>Ejemplo</strong>
+              <br>
+              Tomando el ejemplo anterior, pero ahora considerando que <strong>x = 7</strong>,imprima la variable <strong>x</strong> en una alerta si es mayor que <strong>7</strong> y si es igual a <strong>7</strong> envie un mensaje:
+            </p>
+            <br>
+            <pre class="brush:js">
+              if (x > 7){
+              //este codigo no se ejecuta ya que el resultado es falso
+                alert(x);
+              } else if (x == 7) {
+              // se ejecuta el siguiente codigo
+                alert("La variable x es igual a 7");
+              }
+            </pre>
+            <br>
+            <h4>Condicional switch</h4>
+            <p class="text-justify">
+              La instrucion <strong>switch</strong> se usa para realizar diferentes acciones en diferentes condiciones.
+              <br>
+              <br>
+              <strong>Asi es como se usa:</strong>
+              <br>
+              <ul>
+                <li>Pasamos una expresión o variable a <strong>switch()</strong>.</li>
+                <li>El valor de la variable o expresión se compara con los valores de cada caso.</li>
+                <li>Si hay coincidencia, se ejecuta el bloque de codigo asociado.</li>
+              </ul>
+              <br>
+              <strong>Ejemplo</strong>
+              <br>
+              El método getDay() devuelve el día de la semana como un número entre 0 y 6 (Domingo = 0, lunes = 1, martes = 2, ...).
+              <br>
+              <br>
+              Este ejemplo usa el número del día de la semana para calcular el nombre del día de la semana:
+            </p>
+            <br>
+            <pre class="brush:js">
+              var day = new Date().getDay();
+              /*
+                Tambien es posible realizarlo de la siguiente manera:
+
+                switch(new Date().getDay())
+
+                Es decir pasarle la expresión directamente..
+              */
+              switch (day) {
+                  case 0:
+                      dia = "Domingo";
+                      break;
+                  case 1:
+                      dia = "Lunes";
+                      break;
+                  case 2:
+                      dia = "Martes";
+                      break;
+                  case 3:
+                      dia = "Miércoles";
+                      break;
+                  case 4:
+                      dia = "Jueves";
+                      break;
+                  case 5:
+                      dia = "Viernes";
+                      break;
+                  case 6:
+                      dia = "Sábado";
+              }
+            </pre>
+          </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- libraries -->
+  <!-- Jquery -->
+  <script type="text/javascript" src="../../libs/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="../../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- syntax -->
+  <script type="text/javascript" src="../../libs/syntax/shCore.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shAutoloader.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shBrushPhp.js"></script>
+  <!-- App custom scripts -->
+  <script type="text/javascript" src="../../js/index.js"></script>
+
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+</html>

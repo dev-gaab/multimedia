@@ -10,6 +10,7 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./libs/fontawesome/css/fontawesome-all.css">
+  <link rel="stylesheet" type="text/css" href="./libs/syntax/shThemeFadeToGrey.css">
 	<link href='./css/simple-sidebar.css' rel="stylesheet">
 </head>
 <body>
@@ -19,12 +20,12 @@
 		<span class="navbar-item pr-2" style="border-right: 1px solid white;">
 			<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
 		</span>
-		
+
         <span class="navbar-brand mb-0 h1 ml-2">
             <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Multimedia
         </span>
-        
+
     </nav>
 
 	<div id="wrapper">
@@ -32,43 +33,50 @@
 	    <!-- Sidebar -->
 	    <div id="sidebar-wrapper">
 	        <ul class="sidebar-nav">
-	            <li class="sidebar-brand">
-	                <a href="#">
-	                    Start Bootstrap
-	                </a>
+	            <li>
+	                <a href="#">Inicio</a>
 	            </li>
 	            <li>
-	                <a href="#">Dashboard</a>
+	                <a href="./views/js/intro.html">Introducción</a>
 	            </li>
 	            <li>
-	                <a href="#">Shortcuts</a>
+	                <a href="./views/js/sintax.html">Sintaxis y Comentarios</a>
 	            </li>
 	            <li>
-	                <a href="#">Overview</a>
+	                <a href="./views/js/salida.html">Salida de datos</a>
 	            </li>
 	            <li>
-	                <a href="#">Events</a>
+	                <a href="./views/js/variables.html">Variables y tipos de datos</a>
 	            </li>
 	            <li>
-	                <a href="#">About</a>
+	                <a href="./views/js/opArit.html">Operadores aritméticos</a>
 	            </li>
 	            <li>
-	                <a href="#">Services</a>
+	                <a href="./views/js/opAsig.html">Operadores de asignación</a>
 	            </li>
-	            <li>
-	                <a href="#">Contact</a>
-	            </li>
+              <li>
+                  <a href="./views/js/opComp.html">Operadores de comparación</a>
+              </li>
+              <li>
+                  <a href="./views/js/opLog.html">Operadores lógicos</a>
+              </li>
+              <li>
+                  <a href="./views/js/funciones.html">Funciones</a>
+              </li>
+              <li>
+                  <a href="./views/js/condicionales.html">Condicionales</a>
+              </li>
+              <li>
+                  <a href="./views/js/ciclos.html">Ciclos</a>
+              </li>
 	        </ul>
 	    </div>
 	    <!-- /#sidebar-wrapper -->
 
 	    <!-- Page Content -->
 	    <div id="page-content-wrapper">
-	        <div class="container-fluid">
-	            
-	          <h1>Simple Sidebar</h1>
-	            	<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-	            	<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+	        <div id="content" class="container-fluid">
+
 	        </div>
 	    </div>
 	    <!-- /#page-content-wrapper -->
@@ -81,14 +89,20 @@
 	<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
 	<!-- Bootstrap -->
 	<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- syntax -->
+  <script type="text/javascript" src="./libs/syntax/shCore.js"></script>
+  <script type="text/javascript" src="./libs/syntax/shAutoloader.js"></script>
+  <script type="text/javascript" src="./libs/syntax/shBrushJScript.js"></script>
+  <script type="text/javascript" src="./libs/syntax/shBrushPhp.js"></script>
+  <!-- App custom scripts -->
+  <script type="text/javascript" src="./js/index.js"></script>
 
-
-	  <script>
-	    $("#menu-toggle").click(function(e) {
-	        e.preventDefault();
-	        $("#wrapper").toggleClass("toggled");
-	    });
-    </script>
-
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
 </body>
 </html>

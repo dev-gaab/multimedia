@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/js.ico">
+  <title>Multimedia</title>
+  <!-- libraries -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../../libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../libs/fontawesome/css/fontawesome-all.css">
+  <link rel="stylesheet" type="text/css" href="../../libs/syntax/shThemeFadeToGrey.css">
+  <link href='../../css/simple-sidebar.css' rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-item pr-2" style="border-right: 1px solid white;">
+      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
+    </span>
+
+        <span class="navbar-brand mb-0 h1 ml-2">
+            <img src="../../img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Multimedia
+        </span>
+
+    </nav>
+
+  <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li>
+                  <a href="#">Inicio</a>
+              </li>
+              <li>
+                  <a href="intro.html">Introducción</a>
+              </li>
+              <li>
+                  <a href="sintax.html">Sintaxis y Comentarios</a>
+              </li>
+              <li>
+                  <a href="salida.html">Salida de datos</a>
+              </li>
+              <li>
+                  <a href="variables.html">Variables y tipos de datos</a>
+              </li>
+              <li>
+                  <a href="opArit.html">Operadores aritméticos</a>
+              </li>
+              <li>
+                  <a href="opAsig.html">Operadores de asignación</a>
+              </li>
+              <li>
+                  <a href="opComp.html">Operadores de comparación</a>
+              </li>
+              <li>
+                  <a href="opLog.html">Operadores lógicos</a>
+              </li>
+              <li>
+                  <a href="funciones.html">Funciones</a>
+              </li>
+              <li>
+                  <a href="condicionales.html">Condicionales</a>
+              </li>
+              <li>
+                  <a href="ciclos.html">Ciclos</a>
+              </li>
+          </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+          <div id="content" class="container-fluid">
+           <p class="text-justify">
+             JavaScript puede mostrar datos de diferentes maneras: <br>
+             <li>Escribir en un elemento HTML, usando <strong>innerHTML</strong>.</li>
+             <li>Escribir en el HTML, usando <strong>document.write()</strong>.</li>
+             <li>Escribir en un cuadro de alerta, usando <strong>window.alert()</strong>.</li>
+             <li>Escribir en la consola del navegador, usando <strong>console.log()</strong>.</li>
+           </p>
+           <br>
+
+           <h4>Usando innerHTML</h4>
+           <p class="text-justify">
+             Para acceder a un elemento HTML, JavaScript puede usar el método <strong>document.getElementById(id)</strong>. <br>
+
+             El atributo <strong>id</strong> define el elemento HTML. La propiedad innerHTML escribe el contenido dentro el elemento HTML seleccionado:
+
+           </p>
+           <br>
+           <pre class="brush:php">
+             &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+             &lt;body&gt;
+
+             &lt;h1&gt;My First Web Page&lt;/h1&gt;
+             &lt;p&gt;My First Paragraph&lt;/p&gt;
+
+             &lt;p id="demo"&gt;&lt;/p&gt;
+
+             &lt;script&gt;
+             document.getElementById("demo").innerHTML = 5 + 6;
+             &lt;/script&gt;
+
+             &lt;/body&gt;
+             &lt;/html&gt;
+           </pre>
+           <br>
+           <h4>Usando document.write()</h4>
+           <p class="text-justify">
+             Para propósitos de prueba, es conveniente usar <strong>document.write ()</strong>:
+           </p>
+           <br>
+           <pre class="brush:php">
+             &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+             &lt;body&gt;
+
+             &lt;h1&gt;Suma&lt;/h1&gt;
+             &lt;p&gt;5 + 6 =&lt;/p&gt;
+
+             &lt;script&gt;
+             document.write(5 + 6);
+             &lt;/script&gt;
+
+             &lt;/body&gt;
+             &lt;/html&gt;
+           </pre>
+           <br>
+           <p class="text-justify">
+             Al usar <strong>document.write ()</strong> después de que un documento HTML esté completamente cargado, se eliminará todo el HTML existente :
+           </p>
+           <br>
+           <pre class="brush:php">
+             &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+             &lt;body&gt;
+
+             &lt;h1&gt;Suma&lt;/h1&gt;
+             &lt;p&gt;5 + 6 =&lt;/p&gt;
+
+             &lt;button type="button" onclick="document.write(5 + 6)"&gt;Sumar&lt;/button&gt;
+
+             &lt;/body&gt;
+             &lt;/html&gt;
+           </pre>
+           <br>
+           <h4>Usando window.alert()</h4>
+           <p class="text-justify">
+             Puede usar un cuadro de alerta para mostrar datos:
+           </p>
+           <br>
+           <pre class="brush:php">
+             &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+             &lt;body&gt;
+
+
+             &lt;script&gt;
+             window.alert(5 + 6);
+             &lt;/script&gt;
+
+             &lt;/body&gt;
+             &lt;/html&gt;
+           </pre>
+           <br>
+           <h4>Usando console.log()</h4>
+           <p class="text-justify">
+             Para fines de depuración, puede usar el método console.log () para mostrar datos. <br>
+             Estos datos apareceran en la consola de depuración del navegador. Puedes acceder a ella en la opción <strong>Herramienta para desarrolladores</strong>.
+           </p>
+           <br>
+           <pre class="brush:php">
+             &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+             &lt;body&gt;
+
+
+             &lt;script&gt;
+             console.log(5 + 6);
+             &lt;/script&gt;
+
+             &lt;/body&gt;
+             &lt;/html&gt;
+           </pre>
+          </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- libraries -->
+  <!-- Jquery -->
+  <script type="text/javascript" src="../../libs/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="../../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- syntax -->
+  <script type="text/javascript" src="../../libs/syntax/shCore.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shAutoloader.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shBrushPhp.js"></script>
+  <!-- App custom scripts -->
+  <script type="text/javascript" src="../../js/index.js"></script>
+
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+</html>

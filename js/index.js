@@ -4,11 +4,47 @@
 	Cargar los cursos de Javascript y JQuery
 */
 
+// Funcion que carga los html al contenido de la pagina
 
-function jsCourse() {
-	location.href ="js-course.html";
-}
+function changeContent(data) {
+  switch (data) {
+    case 'inicio':
 
-function jqCourse(){
-	location.href ="jq-course.html";
+      break;
+
+    case 'intro':
+      $('#content').load('./views/js/intro.html');
+      SyntaxHighlighter.all();
+      break;
+
+    case 'sintax':
+      break;
+
+    case 'salida':
+      break;
+
+    case 'variables':
+      break;
+
+    case 'opArit':
+      break;
+
+    case 'opAsig':
+      break;
+
+    case 'opComp':
+      break;
+
+    case 'opLog':
+      break;
+
+    case 'funciones':
+      break;
+
+    case 'condi':
+      break;
+
+    case 'ciclos':
+      break;
+  }
 }

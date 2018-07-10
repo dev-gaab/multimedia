@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/js.ico">
+  <title>Multimedia</title>
+  <!-- libraries -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../../libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../libs/fontawesome/css/fontawesome-all.css">
+  <link rel="stylesheet" type="text/css" href="../../libs/syntax/shThemeFadeToGrey.css">
+  <link href='../../css/simple-sidebar.css' rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-item pr-2" style="border-right: 1px solid white;">
+      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
+    </span>
+
+        <span class="navbar-brand mb-0 h1 ml-2">
+            <img src="../../img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Multimedia
+        </span>
+
+    </nav>
+
+  <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li>
+                  <a href="#">Inicio</a>
+              </li>
+              <li>
+                  <a href="intro.html">Introducción</a>
+              </li>
+              <li>
+                  <a href="sintax.html">Sintaxis y Comentarios</a>
+              </li>
+              <li>
+                  <a href="salida.html">Salida de datos</a>
+              </li>
+              <li>
+                  <a href="variables.html">Variables y tipos de datos</a>
+              </li>
+              <li>
+                  <a href="opArit.html">Operadores aritméticos</a>
+              </li>
+              <li>
+                  <a href="opAsig.html">Operadores de asignación</a>
+              </li>
+              <li>
+                  <a href="opComp.html">Operadores de comparación</a>
+              </li>
+              <li>
+                  <a href="opLog.html">Operadores lógicos</a>
+              </li>
+              <li>
+                  <a href="funciones.html">Funciones</a>
+              </li>
+              <li>
+                  <a href="condicionales.html">Condicionales</a>
+              </li>
+              <li>
+                  <a href="ciclos.html">Ciclos</a>
+              </li>
+          </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+          <div id="content" class="container-fluid">
+           <h4>Sintaxis</h4>
+           <p class="text-justify">
+             La sintaxis se refiere a el conjunto de reglas que se siguen para escribir codigo en <strong>JavaScript</strong>.<br>
+             <br>
+           </p>
+           <pre class="brush:js">
+             var x, y; // Declarar Variables
+             x = 10; y = 5; // Asignando valores
+             prueba = x + y; // Hacer una operación
+           </pre>
+           <br>
+
+           <h4>Valores</h4>
+           <p class="text-justify">
+             La sintaxis de <strong>JavaScript</strong> define dos tipos de valores: literales y variables.
+           </p>
+
+           <h5>Literales</h5><br>
+
+           <p class="text-justify">
+             <strong>Los números</strong> se escriben con o sin decimales:
+           </p>
+           <pre class="brush:js">
+             10.50
+
+             10
+           </pre>
+           <br>
+           <p class="text-justify">
+             <strong>Las cadenas de texto </strong>se escriben entre comillas simples o dobles:
+           </p>
+           <pre class="brush:js">
+             "Maria"
+
+             'Maria'
+           </pre>
+           <br>
+           <p class="text-justify">
+             Para concatenar o unir cadenas de texto se utiliza el signo + como se ve a continuación:
+           </p>
+           <pre class="brush:js">
+             // Unimos y agregamos un espacio de por medio
+             "Maria" + " " + "Rodriguez"
+             // También es posible agregar un espacio dentro de la misma cadena y luego unirlas
+             "Maria " + "Rodriguez"
+           </pre>
+           <br>
+           <h4>Identificadores</h4>
+           <p class="text-justify">
+             Los identificadores son nombres que se utilizan para identificar variables, palabras clave, funciones y etiquetas. <br>
+             <br>
+             En JavaScript, el primer carácter debe ser una letra, un guión bajo (_) o un signo de dólar ($). Los caracteres subsiguientes pueden ser letras, dígitos, guiones bajos o signos de dólar. <br>
+             <br>
+             Los números no están permitidos como el primer carácter, de esta forma, JavaScript puede distinguir fácilmente los identificadores de los números. <br>
+             <br>
+             Todos los identificadores de JavaScript distinguen mayúsculas de minúsculas. JavaScript no reconoce <strong>VAR</strong> o <strong>Var</strong>, solo reconoce la palabra clave <strong>var</strong><br>
+             <br>
+             Las variables Nombre y nombre, son dos variables distintas:
+           </p>
+
+           <pre class="brush:js">
+             var Nombre, nombre;
+             Nombre = 'Jose';
+             nombre = 'Miguel';
+           </pre>
+           <br>
+
+           <h4>Camel Case</h4>
+           <p class="text-justify">
+             Los programadores utilizan diferentes formas de unir múltiples palabras en un nombre de variable:
+
+             <strong>Guiones (-): </strong>Los guiones no estan permitidos en JavaScript. Se utilizan para realizar restas. <br>
+             <br>
+             <strong>Guion bajo (_):</strong> primer_nombre, segundo_nombre. <br>
+             <br>
+             <strong>Camel superior: </strong> PrimerNombre, SegundoNombre. <br>
+             <br>
+             <strong>Camel Inferior: </strong> es el standar en el caso de los programadores de JavaScript, comienza con una letra minúscula y las demás palabras comienzan por mayúscula. Ejemplo: <strong>primerNombre, segundoNombre.</strong>
+           </p><br>
+           <br>
+           <h4>Comentarios</h4>
+           <p class="text-justify">
+             Los comentarios se utilizan generalmente para explicar el código escrito y hacerlo más entendible. <br>
+             <br>
+             Los comentarios también se utilizan para evitar la ejecución de algún fragmento de código. Por ejemplo cuando probamos algún código, podemos comentar las partes que no queremos que se ejecuten.
+           </p> <br>
+           <br>
+           <h4>Comentarios de línea</h4>
+           <p class="text-justify">
+             Los comentarios de línea comienzan con //. Cualquier texto que este despues de // hasta el final de la línea sera ignorado, no se ejecutará. <br>
+             <br>
+           </p>
+           <pre class="brush:js">
+             // Reciclamos el codigo anterior
+
+             // Definimos las variables
+             var Nombre, nombre;
+             // Le Asignamos los Valores
+             Nombre = 'Jose'; // valor Jose
+             nombre = 'Miguel'; // valor Miguel
+           </pre>
+
+           <br>
+           <h4>Comentarios de varias líneas</h4>
+           <p class="text-justify">
+             Los comentarios de línea comienzan con /* y terminan con */. Cualquier texto que este despues de /* y */ sera ignorado. <br>
+             <br>
+           </p>
+           <pre class="brush:js">
+             /*
+             Reciclamos el codigo anterior
+
+             Definimos las variables
+             */
+             var Nombre, nombre;
+             /* Le Asignamos los Valores */
+             Nombre = 'Jose';
+             nombre = 'Miguel';
+           </pre>
+          </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- libraries -->
+  <!-- Jquery -->
+  <script type="text/javascript" src="../../libs/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="../../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- syntax -->
+  <script type="text/javascript" src="../../libs/syntax/shCore.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shAutoloader.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../libs/syntax/shBrushPhp.js"></script>
+  <!-- App custom scripts -->
+  <script type="text/javascript" src="../../js/index.js"></script>
+
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+</html>
