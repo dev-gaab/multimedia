@@ -16,116 +16,130 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <span class="navbar-item pr-2" style="border-right: 1px solid white;">
-      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
-    </span>
-
-        <span class="navbar-brand mb-0 h1 ml-2">
-            <img src="../../img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Multimedia
-        </span>
-
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center pb-0">
+      <span class="navbar-brand mb-0 h1">
+            <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Aprendiendo JavaScript
+      </span>
     </nav>
 
-  <div id="wrapper">
+  <ul class="nav justify-content-center nav-pills bg-dark pb-2">
 
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-              <li>
-                  <a href="#">Inicio</a>
-              </li>
-              <li>
-                  <a href="intro.html">Introducción</a>
-              </li>
-              <li>
-                  <a href="sintax.html">Sintaxis y Comentarios</a>
-              </li>
-              <li>
-                  <a href="salida.html">Salida de datos</a>
-              </li>
-              <li>
-                  <a href="variables.html">Variables y tipos de datos</a>
-              </li>
-              <li>
-                  <a href="opArit.html">Operadores aritméticos</a>
-              </li>
-              <li>
-                  <a href="opAsig.html">Operadores de asignación</a>
-              </li>
-              <li>
-                  <a href="opComp.html">Operadores de comparación</a>
-              </li>
-              <li>
-                  <a href="opLog.html">Operadores lógicos</a>
-              </li>
-              <li>
-                  <a href="funciones.html">Funciones</a>
-              </li>
-              <li>
-                  <a href="condicionales.html">Condicionales</a>
-              </li>
-              <li>
-                  <a href="ciclos.html">Ciclos</a>
-              </li>
-          </ul>
+    <li class="nav-item">
+      <a class="nav-link btn btn-warning" href="../../index.html">
+        <i class="fas fa-home fa-lg"></i>
+        Inicio
+      </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="intro.html">
+            <i class="fas fa-info fa-lg"></i>
+            Introducción
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="sintax.html">
+            <i class="fas fa-file-code fa-lg"></i>
+            Sintaxis
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="salida.html">
+            <i class="fas fa-tv fa-lg"></i>
+            Salida de datos
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="variables.html">
+            <i class="fas fa-font fa-lg"></i>
+            Variables
+        </a>
+    </li>
+
+    <li class="nav-item dropdown ml-1">
+      <a class="nav-link dropdown-toggle btn btn-warning" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" role="button">
+        <i class="fas fa-greater-than-equal fa-lg"></i>
+        Operadores
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="opArit.html">Operadores aritméticos</a>
+        <a class="dropdown-item" href="opAsig.html">Operadores de asignación</a>
+        <a class="dropdown-item" href="opComp.html">Operadores de comparación</a>
+        <a class="dropdown-item" href="opLog.html">Operadores lógicos</a>
       </div>
-      <!-- /#sidebar-wrapper -->
+    </li>
 
-      <!-- Page Content -->
-      <div id="page-content-wrapper">
-          <div id="content" class="container-fluid">
-           <h4>Operadores de asignación </h4>
-           <br>
-           <table class="table table-bordered">
-             <thead>
-               <tr>
-                 <th scope="col">Operador</th>
-                 <th scope="col">Ejemplo</th>
-                 <th scope="col">Igual a</th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td> = </td>
-                 <td> x = y </td>
-                 <td> x = y </td>
-               </tr>
-               <tr>
-                 <td> += </td>
-                 <td> x += y </td>
-                 <td> x = x + y </td>
-               </tr>
-               <tr>
-                 <td> -= </td>
-                 <td> x -= y </td>
-                 <td> x = x - y </td>
-               </tr>
-               <tr>
-                 <td> *= </td>
-                 <td> x *= y </td>
-                 <td> x = x * y </td>
-               </tr>
-               <tr>
-                 <td> /= </td>
-                 <td> x /= y </td>
-                 <td> x = x / y </td>
-               </tr>
-               <tr>
-                 <td> %= </td>
-                 <td> x %= y </td>
-                 <td> x = x % y </td>
-               </tr>
-             </tbody>
-           </table>
-          </div>
-      </div>
-      <!-- /#page-content-wrapper -->
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="funciones.html">
+            <i class="fas fa-code fa-lg"></i> Funciones
+        </a>
+    </li>
 
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="condicionales.html">
+            <i class="fas fa-question fa-lg"></i>
+            Condicionales
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="ciclos.html">
+            <i class="fas fa-sync-alt fa-lg"></i>
+            Ciclos
+        </a>
+    </li>
+
+  </ul>
+  <!-- Page Content -->
+  <div class="container mt-4 mb-4">
+     <h4>Operadores de asignación </h4>
+     <br>
+     <table class="table table-bordered">
+       <thead>
+         <tr>
+           <th scope="col">Operador</th>
+           <th scope="col">Ejemplo</th>
+           <th scope="col">Igual a</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td> = </td>
+           <td> x = y </td>
+           <td> x = y </td>
+         </tr>
+         <tr>
+           <td> += </td>
+           <td> x += y </td>
+           <td> x = x + y </td>
+         </tr>
+         <tr>
+           <td> -= </td>
+           <td> x -= y </td>
+           <td> x = x - y </td>
+         </tr>
+         <tr>
+           <td> *= </td>
+           <td> x *= y </td>
+           <td> x = x * y </td>
+         </tr>
+         <tr>
+           <td> /= </td>
+           <td> x /= y </td>
+           <td> x = x / y </td>
+         </tr>
+         <tr>
+           <td> %= </td>
+           <td> x %= y </td>
+           <td> x = x % y </td>
+         </tr>
+       </tbody>
+     </table>
   </div>
-  <!-- /#wrapper -->
-
   <!-- libraries -->
   <!-- Jquery -->
   <script type="text/javascript" src="../../libs/jquery/jquery.min.js"></script>

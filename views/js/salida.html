@@ -16,184 +16,199 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <span class="navbar-item pr-2" style="border-right: 1px solid white;">
-      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
-    </span>
-
-        <span class="navbar-brand mb-0 h1 ml-2">
-            <img src="../../img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Multimedia
-        </span>
-
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center pb-0">
+      <span class="navbar-brand mb-0 h1">
+            <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Aprendiendo JavaScript
+      </span>
     </nav>
 
-  <div id="wrapper">
+  <ul class="nav justify-content-center nav-pills bg-dark pb-2">
 
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-              <li>
-                  <a href="#">Inicio</a>
-              </li>
-              <li>
-                  <a href="intro.html">Introducción</a>
-              </li>
-              <li>
-                  <a href="sintax.html">Sintaxis y Comentarios</a>
-              </li>
-              <li>
-                  <a href="salida.html">Salida de datos</a>
-              </li>
-              <li>
-                  <a href="variables.html">Variables y tipos de datos</a>
-              </li>
-              <li>
-                  <a href="opArit.html">Operadores aritméticos</a>
-              </li>
-              <li>
-                  <a href="opAsig.html">Operadores de asignación</a>
-              </li>
-              <li>
-                  <a href="opComp.html">Operadores de comparación</a>
-              </li>
-              <li>
-                  <a href="opLog.html">Operadores lógicos</a>
-              </li>
-              <li>
-                  <a href="funciones.html">Funciones</a>
-              </li>
-              <li>
-                  <a href="condicionales.html">Condicionales</a>
-              </li>
-              <li>
-                  <a href="ciclos.html">Ciclos</a>
-              </li>
-          </ul>
+    <li class="nav-item">
+      <a class="nav-link btn btn-warning" href="../../index.html">
+        <i class="fas fa-home fa-lg"></i>
+        Inicio
+      </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="intro.html">
+            <i class="fas fa-info fa-lg"></i>
+            Introducción
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="sintax.html">
+            <i class="fas fa-file-code fa-lg"></i>
+            Sintaxis
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="salida.html">
+            <i class="fas fa-tv fa-lg"></i>
+            Salida de datos
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="variables.html">
+            <i class="fas fa-font fa-lg"></i>
+            Variables
+        </a>
+    </li>
+
+    <li class="nav-item dropdown ml-1">
+      <a class="nav-link dropdown-toggle btn btn-warning" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" role="button">
+        <i class="fas fa-greater-than-equal fa-lg"></i>
+        Operadores
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="opArit.html">Operadores aritméticos</a>
+        <a class="dropdown-item" href="opAsig.html">Operadores de asignación</a>
+        <a class="dropdown-item" href="opComp.html">Operadores de comparación</a>
+        <a class="dropdown-item" href="opLog.html">Operadores lógicos</a>
       </div>
-      <!-- /#sidebar-wrapper -->
+    </li>
 
-      <!-- Page Content -->
-      <div id="page-content-wrapper">
-          <div id="content" class="container-fluid">
-           <p class="text-justify">
-             JavaScript puede mostrar datos de diferentes maneras: <br>
-             <li>Escribir en un elemento HTML, usando <strong>innerHTML</strong>.</li>
-             <li>Escribir en el HTML, usando <strong>document.write()</strong>.</li>
-             <li>Escribir en un cuadro de alerta, usando <strong>window.alert()</strong>.</li>
-             <li>Escribir en la consola del navegador, usando <strong>console.log()</strong>.</li>
-           </p>
-           <br>
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="funciones.html">
+            <i class="fas fa-code fa-lg"></i> Funciones
+        </a>
+    </li>
 
-           <h4>Usando innerHTML</h4>
-           <p class="text-justify">
-             Para acceder a un elemento HTML, JavaScript puede usar el método <strong>document.getElementById(id)</strong>. <br>
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="condicionales.html">
+            <i class="fas fa-question fa-lg"></i>
+            Condicionales
+        </a>
+    </li>
 
-             El atributo <strong>id</strong> define el elemento HTML. La propiedad innerHTML escribe el contenido dentro el elemento HTML seleccionado:
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="ciclos.html">
+            <i class="fas fa-sync-alt fa-lg"></i>
+            Ciclos
+        </a>
+    </li>
 
-           </p>
-           <br>
-           <pre class="brush:php">
-             &lt;!DOCTYPE html&gt;
-             &lt;html&gt;
-             &lt;body&gt;
+  </ul>
+  <!-- Page Content -->
+  <div class="container mt-4 mb-4">
+   <p class="text-justify">
+     JavaScript puede mostrar datos de diferentes maneras: <br>
+     <li>Escribir en un elemento HTML, usando <strong>innerHTML</strong>.</li>
+     <li>Escribir en el HTML, usando <strong>document.write()</strong>.</li>
+     <li>Escribir en un cuadro de alerta, usando <strong>window.alert()</strong>.</li>
+     <li>Escribir en la consola del navegador, usando <strong>console.log()</strong>.</li>
+   </p>
+   <br>
 
-             &lt;h1&gt;My First Web Page&lt;/h1&gt;
-             &lt;p&gt;My First Paragraph&lt;/p&gt;
+   <h4>Usando innerHTML</h4>
+   <p class="text-justify">
+     Para acceder a un elemento HTML, JavaScript puede usar el método <strong>document.getElementById(id)</strong>. <br>
 
-             &lt;p id="demo"&gt;&lt;/p&gt;
+     El atributo <strong>id</strong> define el elemento HTML. La propiedad innerHTML escribe el contenido dentro el elemento HTML seleccionado:
 
-             &lt;script&gt;
-             document.getElementById("demo").innerHTML = 5 + 6;
-             &lt;/script&gt;
+   </p>
+   <br>
+   <pre class="brush:php">
+     &lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;body&gt;
 
-             &lt;/body&gt;
-             &lt;/html&gt;
-           </pre>
-           <br>
-           <h4>Usando document.write()</h4>
-           <p class="text-justify">
-             Para propósitos de prueba, es conveniente usar <strong>document.write ()</strong>:
-           </p>
-           <br>
-           <pre class="brush:php">
-             &lt;!DOCTYPE html&gt;
-             &lt;html&gt;
-             &lt;body&gt;
+     &lt;h1&gt;My First Web Page&lt;/h1&gt;
+     &lt;p&gt;My First Paragraph&lt;/p&gt;
 
-             &lt;h1&gt;Suma&lt;/h1&gt;
-             &lt;p&gt;5 + 6 =&lt;/p&gt;
+     &lt;p id="demo"&gt;&lt;/p&gt;
 
-             &lt;script&gt;
-             document.write(5 + 6);
-             &lt;/script&gt;
+     &lt;script&gt;
+     document.getElementById("demo").innerHTML = 5 + 6;
+     &lt;/script&gt;
 
-             &lt;/body&gt;
-             &lt;/html&gt;
-           </pre>
-           <br>
-           <p class="text-justify">
-             Al usar <strong>document.write ()</strong> después de que un documento HTML esté completamente cargado, se eliminará todo el HTML existente :
-           </p>
-           <br>
-           <pre class="brush:php">
-             &lt;!DOCTYPE html&gt;
-             &lt;html&gt;
-             &lt;body&gt;
+     &lt;/body&gt;
+     &lt;/html&gt;
+   </pre>
+   <br>
+   <h4>Usando document.write()</h4>
+   <p class="text-justify">
+     Para propósitos de prueba, es conveniente usar <strong>document.write ()</strong>:
+   </p>
+   <br>
+   <pre class="brush:php">
+     &lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;body&gt;
 
-             &lt;h1&gt;Suma&lt;/h1&gt;
-             &lt;p&gt;5 + 6 =&lt;/p&gt;
+     &lt;h1&gt;Suma&lt;/h1&gt;
+     &lt;p&gt;5 + 6 =&lt;/p&gt;
 
-             &lt;button type="button" onclick="document.write(5 + 6)"&gt;Sumar&lt;/button&gt;
+     &lt;script&gt;
+     document.write(5 + 6);
+     &lt;/script&gt;
 
-             &lt;/body&gt;
-             &lt;/html&gt;
-           </pre>
-           <br>
-           <h4>Usando window.alert()</h4>
-           <p class="text-justify">
-             Puede usar un cuadro de alerta para mostrar datos:
-           </p>
-           <br>
-           <pre class="brush:php">
-             &lt;!DOCTYPE html&gt;
-             &lt;html&gt;
-             &lt;body&gt;
+     &lt;/body&gt;
+     &lt;/html&gt;
+   </pre>
+   <br>
+   <p class="text-justify">
+     Al usar <strong>document.write ()</strong> después de que un documento HTML esté completamente cargado, se eliminará todo el HTML existente :
+   </p>
+   <br>
+   <pre class="brush:php">
+     &lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;body&gt;
 
+     &lt;h1&gt;Suma&lt;/h1&gt;
+     &lt;p&gt;5 + 6 =&lt;/p&gt;
 
-             &lt;script&gt;
-             window.alert(5 + 6);
-             &lt;/script&gt;
+     &lt;button type="button" onclick="document.write(5 + 6)"&gt;Sumar&lt;/button&gt;
 
-             &lt;/body&gt;
-             &lt;/html&gt;
-           </pre>
-           <br>
-           <h4>Usando console.log()</h4>
-           <p class="text-justify">
-             Para fines de depuración, puede usar el método console.log () para mostrar datos. <br>
-             Estos datos apareceran en la consola de depuración del navegador. Puedes acceder a ella en la opción <strong>Herramienta para desarrolladores</strong>.
-           </p>
-           <br>
-           <pre class="brush:php">
-             &lt;!DOCTYPE html&gt;
-             &lt;html&gt;
-             &lt;body&gt;
+     &lt;/body&gt;
+     &lt;/html&gt;
+   </pre>
+   <br>
+   <h4>Usando window.alert()</h4>
+   <p class="text-justify">
+     Puede usar un cuadro de alerta para mostrar datos:
+   </p>
+   <br>
+   <pre class="brush:php">
+     &lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;body&gt;
 
 
-             &lt;script&gt;
-             console.log(5 + 6);
-             &lt;/script&gt;
+     &lt;script&gt;
+     window.alert(5 + 6);
+     &lt;/script&gt;
 
-             &lt;/body&gt;
-             &lt;/html&gt;
-           </pre>
-          </div>
-      </div>
-      <!-- /#page-content-wrapper -->
+     &lt;/body&gt;
+     &lt;/html&gt;
+   </pre>
+   <br>
+   <h4>Usando console.log()</h4>
+   <p class="text-justify">
+     Para fines de depuración, puede usar el método console.log () para mostrar datos. <br>
+     Estos datos apareceran en la consola de depuración del navegador. Puedes acceder a ella en la opción <strong>Herramienta para desarrolladores</strong>.
+   </p>
+   <br>
+   <pre class="brush:php">
+     &lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;body&gt;
 
+
+     &lt;script&gt;
+     console.log(5 + 6);
+     &lt;/script&gt;
+
+     &lt;/body&gt;
+     &lt;/html&gt;
+   </pre>
   </div>
-  <!-- /#wrapper -->
 
   <!-- libraries -->
   <!-- Jquery -->

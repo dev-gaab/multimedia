@@ -9,94 +9,89 @@
 	<!-- libraries -->
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css">
-</head>
+	<!-- FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="./libs/fontawesome/css/fontawesome-all.css"></head>
 <body>
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <span class="navbar-brand mb-0 h1">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center pb-0">
+	    <span class="navbar-brand mb-0 h1">
             <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Multimedia
-        </span>
-        
+    	    Aprendiendo JavaScript
+	    </span>
     </nav>
 
-	<!-- Content -->
-	<div class="container mt-4 mb-4">
-		
-		<!-- Cards -->
-		<div class="row justify-content-center">
-			<!-- Introduction -->
-			<div class="col-sm">
-				
-				<div class="card" style="width: 18rem;">
-				  <img class="card-img-top" height="150px" src="./img/card-js.jpg" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title text-center">Unidad I</h5>
-				    <p class="card-text text-center">Introducción, salida de datos, sintaxis y comentarios.</p>
-				    <a class="btn btn-primary float-right" href="js-intro.html">Ver</a>
-				  </div>
-				</div>
+	<ul class="nav justify-content-center nav-pills bg-dark pb-2">
 
-			</div>
-			<!-- Vars -->
-			<div class="col-sm">
-				
-				<div class="card" style="width: 18rem;">
-				  <img class="card-img-top" height="150px" src="./img/card-js.jpg" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title text-center">Unidad II</h5>
-				    <p class="card-text text-center">Variables y tipos de datos.</p>
-				    <a class="btn btn-primary float-right" href="js-unidad2.html">Ver</a>
-				  </div>
-				</div>
+	  <li class="nav-item">
+      <a class="nav-link btn btn-warning" href="#">
+      	<i class="fas fa-home fa-lg"></i>
+      	Inicio
+      </a>
+    </li>
 
-			</div>
-			<!-- Operators -->
-			<div class="col-sm">
-				
-				<div class="card" style="width: 18rem;">
-				  <img class="card-img-top" height="150px" src="./img/card-js.jpg" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title text-center">Unidad III</h5>
-				    <p class="card-text text-center">Operadores.</p>
-				    <a class="btn btn-primary float-right" href="js-unidad3.html">Ver</a>
-				  </div>
-				</div>
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="./views/js/intro.html">
+            <i class="fas fa-info fa-lg"></i>
+            Introducción
+        </a>
+    </li>
 
-			</div>
-		</div>
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="./views/js/sintax.html">
+            <i class="fas fa-file-code fa-lg"></i>
+            Sintaxis
+        </a>
+    </li>
 
-		<!-- Cards -->
-		<div class="row mt-4 justify-content-center">
-			<!-- Functions -->
-			<div class="col-sm-4">
-				
-				<div class="card" style="width: 18rem;">
-				  <img class="card-img-top" height="150px" src="./img/card-js.jpg" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title text-center">Unidad IV</h5>
-				    <p class="card-text text-center">Funciones.</p>
-				    <a class="btn btn-primary float-right" href="js-unidad4.html">Ver</a>
-				  </div>
-				</div>
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="./views/js/salida.html">
+            <i class="fas fa-tv fa-lg"></i>
+            Salida de datos
+        </a>
+    </li>
 
-			</div>
-			<!--  Conditionals and Cycles -->
-			<div class="col-sm-4">
-				
-				<div class="card" style="width: 18rem;">
-				  <img class="card-img-top" height="150px" src="./img/card-js.jpg" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title text-center">Unidad V</h5>
-				    <p class="card-text text-center">Condicionales y ciclos.</p>
-				    <a class="btn btn-primary float-right" href="js-unidad5.html">Ver</a>
-				  </div>
-				</div>
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="./views/js/variables.html">
+            <i class="fas fa-font fa-lg"></i>
+            Variables
+        </a>
+    </li>
 
-			</div>
-		</div>
-	</div>
+    <li class="nav-item dropdown ml-1">
+      <a class="nav-link dropdown-toggle btn btn-warning" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" role="button">
+        <i class="fas fa-greater-than-equal fa-lg"></i>
+        Operadores
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="./views/js/opArit.html">Operadores aritméticos</a>
+        <a class="dropdown-item" href="./views/js/opAsig.html">Operadores de asignación</a>
+        <a class="dropdown-item" href="./views/js/opComp.html">Operadores de comparación</a>
+        <a class="dropdown-item" href="./views/js/opLog.html">Operadores lógicos</a>
+      </div>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="./views/js/funciones.html">
+            <i class="fas fa-code fa-lg"></i> Funciones
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="./views/js/condicionales.html">
+            <i class="fas fa-question fa-lg"></i>
+            Condicionales
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="./views/js/ciclos.html">
+            <i class="fas fa-sync-alt fa-lg"></i>
+            Ciclos
+        </a>
+    </li>
+
+	</ul>
 
 	<!-- libraries -->
 	<!-- Jquery -->

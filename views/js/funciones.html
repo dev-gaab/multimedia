@@ -16,149 +16,164 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <span class="navbar-item pr-2" style="border-right: 1px solid white;">
-      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fas fa-bars"></i></a>
-    </span>
-
-        <span class="navbar-brand mb-0 h1 ml-2">
-            <img src="../../img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Multimedia
-        </span>
-
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center pb-0">
+      <span class="navbar-brand mb-0 h1">
+            <img src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Aprendiendo JavaScript
+      </span>
     </nav>
 
-  <div id="wrapper">
+  <ul class="nav justify-content-center nav-pills bg-dark pb-2">
 
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-              <li>
-                  <a href="#">Inicio</a>
-              </li>
-              <li>
-                  <a href="intro.html">Introducción</a>
-              </li>
-              <li>
-                  <a href="sintax.html">Sintaxis y Comentarios</a>
-              </li>
-              <li>
-                  <a href="salida.html">Salida de datos</a>
-              </li>
-              <li>
-                  <a href="variables.html">Variables y tipos de datos</a>
-              </li>
-              <li>
-                  <a href="opArit.html">Operadores aritméticos</a>
-              </li>
-              <li>
-                  <a href="opAsig.html">Operadores de asignación</a>
-              </li>
-              <li>
-                  <a href="opComp.html">Operadores de comparación</a>
-              </li>
-              <li>
-                  <a href="opLog.html">Operadores lógicos</a>
-              </li>
-              <li>
-                  <a href="funciones.html">Funciones</a>
-              </li>
-              <li>
-                  <a href="condicionales.html">Condicionales</a>
-              </li>
-              <li>
-                  <a href="ciclos.html">Ciclos</a>
-              </li>
-          </ul>
+    <li class="nav-item">
+      <a class="nav-link btn btn-warning" href="../../index.html">
+        <i class="fas fa-home fa-lg"></i>
+        Inicio
+      </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="intro.html">
+            <i class="fas fa-info fa-lg"></i>
+            Introducción
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="sintax.html">
+            <i class="fas fa-file-code fa-lg"></i>
+            Sintaxis
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="salida.html">
+            <i class="fas fa-tv fa-lg"></i>
+            Salida de datos
+        </a>
+    </li>
+
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="variables.html">
+            <i class="fas fa-font fa-lg"></i>
+            Variables
+        </a>
+    </li>
+
+    <li class="nav-item dropdown ml-1">
+      <a class="nav-link dropdown-toggle btn btn-warning" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" role="button">
+        <i class="fas fa-greater-than-equal fa-lg"></i>
+        Operadores
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="opArit.html">Operadores aritméticos</a>
+        <a class="dropdown-item" href="opAsig.html">Operadores de asignación</a>
+        <a class="dropdown-item" href="opComp.html">Operadores de comparación</a>
+        <a class="dropdown-item" href="opLog.html">Operadores lógicos</a>
       </div>
-      <!-- /#sidebar-wrapper -->
+    </li>
 
-      <!-- Page Content -->
-      <div id="page-content-wrapper">
-          <div id="content" class="container-fluid">
-            <h2>Funciones</h2>
-            <br>
-            <p class="text-justify">
-              Una función JavaScript es un bloque de código diseñado para realizar una tarea en particular. Una función se ejecuta cuando "algo "la invoca (la llama).
-            </p>
-            <br>
-            <h4>Sintaxis</h4>
-            <br>
-            <p class="text-justify">
-              Una función de JavaScript se define con la palabra clave <strong>function</strong>, seguida de un <strong>nombre</strong>, seguido de paréntesis <strong>()</strong>.
-              <br>
-              Los nombres de funciones pueden contener letras, números, guiones bajos y signos de dólar (las mismas reglas que las variables).
-              <br>
-              Los paréntisis pueden incluir nombres de parámetros separados por comas: <strong>(parámetro1, parámetro2, ...)</strong>.
-              <br>
-              El codigo que se ejecutará, por la función, se coloca entre llaves: <strong>{}</strong>
-            </p>
-            <br>
-            <pre class="brush:js">
-              function nombre(parametro1, parametro2)
-              {
-                // Codigo a ejecutar
-              }
-            </pre>
-            <br>
-            <h4>Función de retorno</h4>
-            <br>
-            <p class="text-justify">
-              Cuando JavaScript alcanza una declaración de retorno (<strong>return</strong>), la función dejara de ejecutarse.
-              <br>
-              Las funciones a menudo calculan un <strong>valor de retorno</strong>. El valor de retorno es "devuelto" a quien "la llama".
-              <br>
-              <strong>Ejemplo: </strong>
-              <br>
-              Calcule el producto de dos números y devuelva el resultado:
-            </p>
-            <br>
-            <pre class="brush:js">
-              var a = multiplicar(5, 5);
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="funciones.html">
+            <i class="fas fa-code fa-lg"></i> Funciones
+        </a>
+    </li>
 
-              function multiplicar(x, y){
-                return x * y;
-              }
-            </pre>
-            <br>
-            <p class="text-justify">
-              El resutado almacenado en <strong>a</strong> será: <strong>25</strong>.
-            </p>
-            <br>
-            <h4>¿Por qué funciones?</h4>
-            <br>
-            <p class="text-justify">
-              Puede reutilizar el código, se define la función una vez y se puede usar las veces que se requiera en cualquier parte del codigo.
-              <br>
-              <br>
-              El operador <strong>()</strong> invoca la función. Llamar a la funcion sin <strong>()</strong> devolverá la definición de la función en lugar del resultado, es decir, devolvera el código.
-              <br>
-              <br>
-              Reutilizando el código anterior llamaremos a la función <strong>multiplicar</strong> sin los <strong>()</strong>:
-            </p>
-            <br>
-            <pre class="brush:js">
-              var a = multiplicar;
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="condicionales.html">
+            <i class="fas fa-question fa-lg"></i>
+            Condicionales
+        </a>
+    </li>
 
-              function multiplicar(x, y){
-                return x * y;
-              }
-            </pre>
-            <br>
-            <p class="text-justify">
-              El resultado almacenado en <strong>a</strong> será el siguiente:
-            </p>
-            <pre class="brush:js">
-              function multiplicar(x, y){
-                return x * y;
-              }
-            </pre>
-          </div>
-      </div>
-      <!-- /#page-content-wrapper -->
+    <li class="nav-item ml-1">
+        <a class="nav-link btn btn-warning" href="ciclos.html">
+            <i class="fas fa-sync-alt fa-lg"></i>
+            Ciclos
+        </a>
+    </li>
 
-  </div>
-  <!-- /#wrapper -->
+  </ul>
+  <!-- Page Content -->
+  <div class="container mt-4 mb-4">
+    <h2>Funciones</h2>
+    <br>
+    <p class="text-justify">
+      Una función JavaScript es un bloque de código diseñado para realizar una tarea en particular. Una función se ejecuta cuando "algo "la invoca (la llama).
+    </p>
+    <br>
+    <h4>Sintaxis</h4>
+    <br>
+    <p class="text-justify">
+      Una función de JavaScript se define con la palabra clave <strong>function</strong>, seguida de un <strong>nombre</strong>, seguido de paréntesis <strong>()</strong>.
+      <br>
+      Los nombres de funciones pueden contener letras, números, guiones bajos y signos de dólar (las mismas reglas que las variables).
+      <br>
+      Los paréntisis pueden incluir nombres de parámetros separados por comas: <strong>(parámetro1, parámetro2, ...)</strong>.
+      <br>
+      El codigo que se ejecutará, por la función, se coloca entre llaves: <strong>{}</strong>
+    </p>
+    <br>
+    <pre class="brush:js">
+      function nombre(parametro1, parametro2)
+      {
+        // Codigo a ejecutar
+      }
+    </pre>
+    <br>
+    <h4>Función de retorno</h4>
+    <br>
+    <p class="text-justify">
+      Cuando JavaScript alcanza una declaración de retorno (<strong>return</strong>), la función dejara de ejecutarse.
+      <br>
+      Las funciones a menudo calculan un <strong>valor de retorno</strong>. El valor de retorno es "devuelto" a quien "la llama".
+      <br>
+      <strong>Ejemplo: </strong>
+      <br>
+      Calcule el producto de dos números y devuelva el resultado:
+    </p>
+    <br>
+    <pre class="brush:js">
+      var a = multiplicar(5, 5);
+
+      function multiplicar(x, y){
+        return x * y;
+      }
+    </pre>
+    <br>
+    <p class="text-justify">
+      El resutado almacenado en <strong>a</strong> será: <strong>25</strong>.
+    </p>
+    <br>
+    <h4>¿Por qué funciones?</h4>
+    <br>
+    <p class="text-justify">
+      Puede reutilizar el código, se define la función una vez y se puede usar las veces que se requiera en cualquier parte del codigo.
+      <br>
+      <br>
+      El operador <strong>()</strong> invoca la función. Llamar a la funcion sin <strong>()</strong> devolverá la definición de la función en lugar del resultado, es decir, devolvera el código.
+      <br>
+      <br>
+      Reutilizando el código anterior llamaremos a la función <strong>multiplicar</strong> sin los <strong>()</strong>:
+    </p>
+    <br>
+    <pre class="brush:js">
+      var a = multiplicar;
+
+      function multiplicar(x, y){
+        return x * y;
+      }
+    </pre>
+    <br>
+    <p class="text-justify">
+      El resultado almacenado en <strong>a</strong> será el siguiente:
+    </p>
+    <pre class="brush:js">
+      function multiplicar(x, y){
+        return x * y;
+      }
+    </pre>
+  <div>
 
   <!-- libraries -->
   <!-- Jquery -->
